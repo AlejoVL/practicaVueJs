@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Clase VueJs
+    <br>
+    <div id="instancia1">
+        {{ mensaje }}
+
+        <p v-show="mostrar">Parrafo 1</p>
+        <br>
+        <a href="#" title="Titulos en el link">Link con titulo</a>
+
+        <p>
+            <a href="#" v-bind:title="titulo">Link con titulo</a>
+        </p>
+
+        <img v-bind:src="imagen" />
+
+        Suma de 2 números
+
+        <h2 v-if="num1+num2===10">Si</h2>
+        <h2 v-else>No</h2>
+
+        Arreglos VueJs
+        <p>
+            <ul>
+                <li v-for="fruta in frutas">{{fruta}}</li>
+            </ul>
+        </p>
+
+        Objetos en VueJs
+        <p>
+            <ul>
+                <li v-for="ingrediente in ingredientes">{{ingrediente.id}}-{{ingrediente.Nombre}}</li>
+            </ul>
+        </p>
+    </div>
+
+    <script src="vue.js"></script>
+    <script src="instancias.js"></script>
+
+</body>
+</html>
